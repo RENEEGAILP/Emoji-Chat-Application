@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852428180583",
+    "project_id": "numad21su-vocab",
+    "storage_bucket": "numad21su-vocab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852428180583:android:1693cb60da32c1cfd318c2",
+        "android_client_info": {
+          "package_name": "edu.neu.madcourse.numad21su_vocab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852428180583-ccb2ih0sq2m0t97nso440vu84kmkk0uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDubtN_IWEQODRI7pol_fgcHN8mNTUkHG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852428180583-ccb2ih0sq2m0t97nso440vu84kmkk0uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
