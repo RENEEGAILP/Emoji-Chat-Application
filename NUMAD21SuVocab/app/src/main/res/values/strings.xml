@@ -2,4 +2,6 @@
     <string name="app_name">NUMAD21Su-Vocab</string>
     <string name="login">Login</string>
     <string name="create_new_user">Create new user</string>
+    <string name="show_all_activity">Show all activity</string>
+    <string name="send_a_new_emoji">Send a new emoji!</string>
 </resources>
