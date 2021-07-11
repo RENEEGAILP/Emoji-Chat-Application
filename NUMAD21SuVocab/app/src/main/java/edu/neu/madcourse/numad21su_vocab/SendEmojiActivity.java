@@ -2,7 +2,9 @@ package edu.neu.madcourse.numad21su_vocab;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.Notification;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -15,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class SendActivity extends AppCompatActivity {
+public class SendEmojiActivity extends AppCompatActivity {
 
     String userName;
     String selected_sticker_id;
@@ -65,6 +67,12 @@ public class SendActivity extends AppCompatActivity {
 
             }
         });
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(SendEmojiActivity.this)
+                .setSmallIcon(R.drawable.ic_baseline_message_24)
+                .setContentTitle("Notification").setContentText("You got a new message")
+                .setAutoCancel(true);
+
     }
 
     public void onStickerClick(View view)

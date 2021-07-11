@@ -31,6 +31,10 @@ public class StickerHolder extends RecyclerView.ViewHolder {
         senderTextView.setText("From: " + senderText);
     }
 
+    public void setReceiverTextView(String receiverText) {
+        senderTextView.setText("To: " + receiverText);
+    }
+
     private int getContentResourceID(String contentId)
     {
         switch(contentId)

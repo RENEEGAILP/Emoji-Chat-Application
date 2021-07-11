@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,9 +15,9 @@ public class StickerAdapter extends RecyclerView.Adapter<StickerHolder> {
 
     private ArrayList<StickerCardItem> stickerList;
 
-    private Context context;
+    private String context;
 
-    public StickerAdapter(ArrayList<StickerCardItem> stickerCardItemList, Context context) {
+    public StickerAdapter(ArrayList<StickerCardItem> stickerCardItemList, String context) {
         this.stickerList = stickerCardItemList;
         this.context = context;
     }
@@ -36,7 +37,16 @@ public class StickerAdapter extends RecyclerView.Adapter<StickerHolder> {
         StickerCardItem stickerCardItem = stickerList.get(position);
 
         holder.setContent(stickerCardItem.getContentId());
-        holder.setSenderTextView(stickerCardItem.getUserId());
+
+
+        if (this.context == "DisplayReceivedActivity") {
+            holder.setSenderTextView(stickerCardItem.getUserId());
+        }
+
+        if (this.context == "DisplayMessagesSentActivity") {
+            holder.setReceiverTextView(stickerCardItem.getUserId());
+        }
+
     }
 
     @Override
