@@ -1,25 +1,28 @@
 package edu.neu.madcourse.numad21su_vocab;
 
 public class ChatInfo {
-    private  final String sender_name;
-    private final String receiver_name;
-    private final String content_id;
+    String senderName;
+    String receiverName;
+    String contentId;
+
+    public ChatInfo()
+    {    }
 
     public ChatInfo(String sender_name, String receiver_name, String content_id) {
-        this.sender_name = sender_name;
-        this.receiver_name = receiver_name;
-        this.content_id = content_id;
+        this.senderName = sender_name;
+        this.receiverName = receiver_name;
+        this.contentId = content_id;
     }
 
     public String getSenderName() {
-        return sender_name;
+        return senderName;
     }
 
     public String getReceiverName() {
-        return receiver_name;
+        return receiverName;
     }
 
     public String getContentId() {
-        return content_id;
+        return contentId;
     }
 }

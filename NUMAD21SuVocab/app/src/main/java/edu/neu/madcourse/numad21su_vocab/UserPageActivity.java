@@ -35,7 +35,7 @@ public class UserPageActivity extends AppCompatActivity {
                 startActivity( send_intent );
                 break;
             case R.id.show_activity_button:
-                Intent display_all_intent =new Intent(getApplicationContext(),DisplayAllActivity.class);
+                Intent display_all_intent =new Intent(getApplicationContext(), DisplayReceivedActivity.class);
                 display_all_intent.putExtra( "userName", userName );
                 startActivity( display_all_intent );
                 break;

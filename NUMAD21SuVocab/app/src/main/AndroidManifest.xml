@@ -11,7 +11,7 @@
         android:theme="@style/Theme.NUMAD21SuVocab">
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".DisplayAllActivity" />
+        <activity android:name=".DisplayReceivedActivity" />
         <activity android:name=".SendActivity" />
         <activity android:name=".UserPageActivity" />
         <activity android:name=".MainActivity">
