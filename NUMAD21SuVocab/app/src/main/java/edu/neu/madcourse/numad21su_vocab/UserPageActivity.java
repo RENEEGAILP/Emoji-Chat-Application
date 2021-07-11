@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -41,7 +40,7 @@ public class UserPageActivity extends AppCompatActivity {
         switch (view.getId())
         {
             case R.id.send_button:
-                Intent send_intent =new Intent(getApplicationContext(),SendActivity.class);
+                Intent send_intent =new Intent(getApplicationContext(), SendEmojiActivity.class);
                 send_intent.putExtra( "userName", userName );
                 startActivity( send_intent );
                 break;
@@ -49,6 +48,11 @@ public class UserPageActivity extends AppCompatActivity {
                 Intent display_all_intent =new Intent(getApplicationContext(), DisplayReceivedActivity.class);
                 display_all_intent.putExtra( "userName", userName );
                 startActivity( display_all_intent );
+                break;
+            case R.id.show_sent_activity_button:
+                Intent display_all_sent_intent =new Intent(getApplicationContext(), DisplayMessagesSentActivity.class);
+                display_all_sent_intent.putExtra( "userName", userName );
+                startActivity( display_all_sent_intent );
                 break;
         }
     }

@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD21SuVocab">
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".DisplayMessagesSentActivity"></activity>
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".DisplayReceivedActivity" />
-        <activity android:name=".SendActivity" />
+        <activity android:name=".SendEmojiActivity" />
         <activity android:name=".UserPageActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
