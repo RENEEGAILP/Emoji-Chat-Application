@@ -3,6 +3,7 @@ package edu.neu.madcourse.numad21su_vocab;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,6 +63,9 @@ public class LoginActivity extends AppCompatActivity {
 //                            Toast.makeText(LoginActivity.this, "Login Success " + user_snapshot.child("firstName").getValue(), Toast.LENGTH_LONG).show();
 //
 //                        }
+                        Intent intent = new Intent(getApplicationContext(), UserPageActivity.class);
+                        intent.putExtra( "userName",userName);
+                        startActivity(intent);
                     }
                     else {
                         Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_LONG).show();

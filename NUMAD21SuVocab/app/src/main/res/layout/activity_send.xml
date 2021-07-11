@@ -6,4 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".SendActivity">
 
+
+    <TextView
+        android:id="@+id/enter_user_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Enter the name of the user:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sticker_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="175dp"
+        android:layout_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_button2"
+        app:layout_constraintVertical_bias="0.927">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sticker_1"
+                android:layout_width="137dp"
+                android:layout_height="146dp"
+                android:clickable="true"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toStartOf="@+id/sticker_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/nutella" />
+
+            <ImageView
+                android:id="@+id/sticker_2"
+                android:layout_width="135dp"
+                android:layout_height="134dp"
+                android:layout_marginEnd="40dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/turtle" />
+
+            <ImageView
+                android:id="@+id/sticker_3"
+                android:layout_width="152dp"
+                android:layout_height="157dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sticker_1"
+                app:srcCompat="@drawable/watermelon" />
+
+            <ImageView
+                android:id="@+id/sticker_4"
+                android:layout_width="142dp"
+                android:layout_height="152dp"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sticker_2"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/whale" />
+
+            <ImageView
+                android:id="@+id/sticker_5"
+                android:layout_width="139dp"
+                android:layout_height="154dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sticker_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sticker_3"
+                app:srcCompat="@drawable/cake" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_user_textview" />
+
+    <Button
+        android:id="@+id/send_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSendButtonClick"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

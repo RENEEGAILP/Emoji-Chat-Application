@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class UserPageActivity extends AppCompatActivity {
 
-    String user_name;
+    String userName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -18,10 +18,10 @@ public class UserPageActivity extends AppCompatActivity {
 
         if(extras !=null)
         {
-            user_name = extras.getString("user_name");
+            userName = extras.getString("userName");
         }
         TextView welcome_textview = findViewById( R.id.welcome_textview );
-        welcome_textview.setText( "Welcome " +user_name +"!!");
+        welcome_textview.setText( "Welcome " + userName +"!!");
         welcome_textview.setVisibility( View.VISIBLE );
     }
 
@@ -31,12 +31,12 @@ public class UserPageActivity extends AppCompatActivity {
         {
             case R.id.send_button:
                 Intent send_intent =new Intent(getApplicationContext(),SendActivity.class);
-                send_intent.putExtra( "user_name",user_name );
+                send_intent.putExtra( "userName", userName );
                 startActivity( send_intent );
                 break;
             case R.id.show_activity_button:
                 Intent display_all_intent =new Intent(getApplicationContext(),DisplayAllActivity.class);
-                display_all_intent.putExtra( "user_name",user_name );
+                display_all_intent.putExtra( "userName", userName );
                 startActivity( display_all_intent );
                 break;
         }
