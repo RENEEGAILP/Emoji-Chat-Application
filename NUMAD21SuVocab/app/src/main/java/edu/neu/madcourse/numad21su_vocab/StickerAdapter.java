@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+//Citation : Code adapted from previous assignment (A4 : Link Collector)
+
 
 public class StickerAdapter extends RecyclerView.Adapter<StickerHolder> {
 
