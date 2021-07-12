@@ -153,6 +153,7 @@ public class SendEmojiActivity extends AppCompatActivity {
         sticker3.setAlpha( 1f );
         sticker4.setAlpha( 1f );
         sticker5.setAlpha( 1f );
+        selected_sticker_id = null;
     }
 
     public void onStickerClick(View view)
